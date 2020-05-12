@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial , sans-serif; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+.wrap {
+  overflow: hidden; }
+
+img {
+  width: 100%; }
+
+header {
+  padding: 20px 40px;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center; }
+  header .header-left {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center; }
+    header .header-left .header-logo {
+      width: 250px; }
+  header .header-right {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center; }
+    header .header-right .profile-icon {
+      width: 40px;
+      margin-left: 20px; }
+
+/*# sourceMappingURL=styles.css.map */

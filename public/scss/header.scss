@@ -1,0 +1,59 @@
+@mixin flex($j:space-between,$a:center) {
+  display: flex;
+  display: -webkit-flex;//Safari,Android,iOS対応
+  display: -ms-flexbox;//IE対応
+  justify-content: $j;
+  -webkit-box-pack: $j;//Safari,Android,iOS対応
+  -ms-flex-pack: $j;//IE対応
+  align-items: $a;
+  -webkit-box-align: $a;//Safari,Android,iOS対応
+  -ms-flex-align: $a;//IE対応
+}
+
+*{
+  box-sizing: border-box;
+  font-family: Arial , sans-serif;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+li{
+  list-style: none;
+}
+.wrap{
+  overflow: hidden;
+}
+img{
+  width:100%;
+}
+.error{
+  color:tomato;
+  margin-top:0;
+}
+header{
+  padding:20px 40px;
+  @include flex;
+  .header-left{
+    @include flex;
+    .header-logo{
+      width:250px;
+    }
+  }
+    .header-right{
+      @include flex;
+      .post-btn{
+
+      }
+      .profile-icon{
+        margin-left:20px;
+
+        img{
+          width:50px;
+          height:50px;
+        border-radius:50%;
+        object-fit: cover;
+        }
+      }
+    }
+}

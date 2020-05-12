@@ -1,0 +1,74 @@
+@import "header";
+
+.post{
+  border:1px solid #eee;
+  padding:0;
+  margin:40px auto;
+  .post-header{
+    padding:10px 10px;
+    @include flex;
+    .post-header-left{
+        @include flex($j:flex-start);
+      .user-icon img{
+        width:50px;
+        height:50px;
+        border-radius:50%;
+        border:1px solid #eee;
+        object-fit: cover;
+      }
+      .user-name a{
+        color:#333;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+
+    .delete-post-icon{
+      width:20px;
+    }
+  }
+  .post-content{
+    .post-like{
+      img{
+        width:30px;
+        margin:10px;
+      }
+    }
+    .post-caption{
+      padding:0 10px;
+    }
+    .post-date{
+      color:#aaa;
+      font-size:12px;
+      padding:0 10px;
+    }
+    .post-comments{
+      ul{
+        padding:10px;
+      }
+      .comment-form{
+        border-top:1px solid #eee;
+        padding:20px 10px;
+        margin-top:10px;
+        @include flex;
+        .comment-text{
+          width:80%;
+          border:none;
+          &:focus{
+            outline:0;
+          }
+        }
+        .comment-submit{
+          background-color: transparent;
+          border:none;
+          color:#0095f6;
+          font-weight:bold;
+          &:hover{
+            cursor:pointer;
+          }
+        }
+      }
+    }
+  }
+}
